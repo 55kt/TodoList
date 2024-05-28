@@ -13,6 +13,7 @@
 		4B5A8B492C06156900086B9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5A8B482C06156900086B9F /* Preview Assets.xcassets */; };
 		4B5A8B512C061D9100086B9F /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A8B502C061D9100086B9F /* ColorExtensions.swift */; };
 		4B5A8B542C06211900086B9F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A8B532C06211900086B9F /* ViewModel.swift */; };
+		4B5A8B572C06278600086B9F /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A8B562C06278600086B9F /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		4B5A8B482C06156900086B9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B5A8B502C061D9100086B9F /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		4B5A8B532C06211900086B9F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4B5A8B562C06278600086B9F /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		4B5A8B402C06156800086B9F /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				4B5A8B552C0626D200086B9F /* Components */,
 				4B5A8B522C06210600086B9F /* ViewModel */,
 				4B5A8B412C06156800086B9F /* TodoListApp.swift */,
 				4B5A8B432C06156800086B9F /* ContentView.swift */,
@@ -87,6 +90,14 @@
 				4B5A8B532C06211900086B9F /* ViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4B5A8B552C0626D200086B9F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4B5A8B562C06278600086B9F /* BackgroundView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5A8B572C06278600086B9F /* BackgroundView.swift in Sources */,
 				4B5A8B442C06156800086B9F /* ContentView.swift in Sources */,
 				4B5A8B422C06156800086B9F /* TodoListApp.swift in Sources */,
 				4B5A8B542C06211900086B9F /* ViewModel.swift in Sources */,
