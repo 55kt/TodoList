@@ -8,18 +8,14 @@
 import SwiftUI
 
 struct AddTaskView: View {
-    
-    //MARK: - Properties
-    @State var newTask = ""
-    
     var body: some View {
-        VStack {
-            TextField("Enter your new task", text: $newTask)
-                .padding()
-                .background(Color.tdPrimary.opacity(0.15))
-            .cornerRadius(10)
-            
-            Text(newTask)
+        ZStack {
+            BackgroundView()
+            VStack {
+                EntryFieldView()
+                ButtonView()
+            }
+            .padding(10)
         }
     }
 }

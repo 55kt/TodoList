@@ -14,7 +14,6 @@ struct TaskListView: View {
                 
                 //MARK: - Components
                 BackgroundView()
-                AddTaskView()
                     
             }
             .navigationTitle("To Do List")
