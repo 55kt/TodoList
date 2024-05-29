@@ -14,6 +14,9 @@
 		4B5A8B512C061D9100086B9F /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A8B502C061D9100086B9F /* ColorExtensions.swift */; };
 		4B5A8B542C06211900086B9F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A8B532C06211900086B9F /* ViewModel.swift */; };
 		4B5A8B572C06278600086B9F /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A8B562C06278600086B9F /* BackgroundView.swift */; };
+		4B5A8B692C06584300086B9F /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A8B682C06584300086B9F /* TaskListView.swift */; };
+		4B5A8B6C2C06608700086B9F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A8B6B2C06608700086B9F /* ListView.swift */; };
+		4B5A8B6F2C07694C00086B9F /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A8B6E2C07694C00086B9F /* AddTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		4B5A8B502C061D9100086B9F /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		4B5A8B532C06211900086B9F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		4B5A8B562C06278600086B9F /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		4B5A8B682C06584300086B9F /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		4B5A8B6B2C06608700086B9F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		4B5A8B6E2C07694C00086B9F /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 		4B5A8B402C06156800086B9F /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				4B5A8B672C06583000086B9F /* Views */,
 				4B5A8B552C0626D200086B9F /* Components */,
 				4B5A8B522C06210600086B9F /* ViewModel */,
 				4B5A8B412C06156800086B9F /* TodoListApp.swift */,
@@ -98,6 +105,32 @@
 				4B5A8B562C06278600086B9F /* BackgroundView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4B5A8B672C06583000086B9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B5A8B6D2C07693700086B9F /* AddTask */,
+				4B5A8B6A2C06603000086B9F /* Subviews */,
+				4B5A8B682C06584300086B9F /* TaskListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4B5A8B6A2C06603000086B9F /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				4B5A8B6B2C06608700086B9F /* ListView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		4B5A8B6D2C07693700086B9F /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				4B5A8B6E2C07694C00086B9F /* AddTaskView.swift */,
+			);
+			path = AddTask;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,8 +206,11 @@
 				4B5A8B572C06278600086B9F /* BackgroundView.swift in Sources */,
 				4B5A8B442C06156800086B9F /* ContentView.swift in Sources */,
 				4B5A8B422C06156800086B9F /* TodoListApp.swift in Sources */,
+				4B5A8B6F2C07694C00086B9F /* AddTaskView.swift in Sources */,
+				4B5A8B6C2C06608700086B9F /* ListView.swift in Sources */,
 				4B5A8B542C06211900086B9F /* ViewModel.swift in Sources */,
 				4B5A8B512C061D9100086B9F /* ColorExtensions.swift in Sources */,
+				4B5A8B692C06584300086B9F /* TaskListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
