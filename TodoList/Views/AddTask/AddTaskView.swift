@@ -11,15 +11,21 @@ struct AddTaskView: View {
     var body: some View {
         ZStack {
             BackgroundView()
+            NavigationBar(navTitle: "Add Task", buttonImageName: "chevron.left") {
+                //
+            }
             VStack {
                 EntryFieldView()
-                ButtonView()
+                ButtonView(buttonTitle: "Add Task") {
+                    //
+                }
+                Spacer()
             }
             .padding(10)
         }
-    }
-}
-
+        
+            }
+        }
 #Preview {
     AddTaskView()
         .preferredColorScheme(.dark)

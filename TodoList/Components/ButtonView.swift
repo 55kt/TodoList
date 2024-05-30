@@ -11,13 +11,15 @@ struct ButtonView: View {
     
     //MARK: - Properties
     @Environment (\.dismiss) private var dismiss //Snaps of state
+    let buttonTitle: String
+    let action: () -> ()
     
     var body: some View {
         VStack {
             Button {
                 dismiss()
             } label: {
-                Text("Add Task")
+                Text(buttonTitle)
                     .font(.headline)
                     .padding()
                     .foregroundColor(Color.tdBackground1)
@@ -30,6 +32,6 @@ struct ButtonView: View {
 }
 
 #Preview {
-    ButtonView()
+    ButtonView(buttonTitle: "Button") {}
         .preferredColorScheme(.dark)
 }

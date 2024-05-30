@@ -19,6 +19,7 @@
 		4B5A8B6F2C07694C00086B9F /* EntryFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A8B6E2C07694C00086B9F /* EntryFieldView.swift */; };
 		4B7361572C07B22800F40142 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7361562C07B22800F40142 /* ButtonView.swift */; };
 		4B73615A2C07B5CA00F40142 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7361592C07B5CA00F40142 /* AddTaskView.swift */; };
+		4B73615E2C08DA3C00F40142 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73615D2C08DA3C00F40142 /* NavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		4B5A8B6E2C07694C00086B9F /* EntryFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryFieldView.swift; sourceTree = "<group>"; };
 		4B7361562C07B22800F40142 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		4B7361592C07B5CA00F40142 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		4B73615D2C08DA3C00F40142 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				4B5A8B562C06278600086B9F /* BackgroundView.swift */,
 				4B5A8B6E2C07694C00086B9F /* EntryFieldView.swift */,
 				4B7361562C07B22800F40142 /* ButtonView.swift */,
+				4B73615D2C08DA3C00F40142 /* NavigationBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				4B5A8B442C06156800086B9F /* ContentView.swift in Sources */,
 				4B5A8B422C06156800086B9F /* TodoListApp.swift in Sources */,
 				4B5A8B6F2C07694C00086B9F /* EntryFieldView.swift in Sources */,
+				4B73615E2C08DA3C00F40142 /* NavigationBar.swift in Sources */,
 				4B5A8B6C2C06608700086B9F /* ListView.swift in Sources */,
 				4B5A8B542C06211900086B9F /* ViewModel.swift in Sources */,
 				4B5A8B512C061D9100086B9F /* ColorExtensions.swift in Sources */,
