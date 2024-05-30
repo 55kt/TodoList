@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct AddTaskView: View {
+    
+    //MARK: - Properties
+    @EnvironmentObject var vm: ViewModel
+    
     var body: some View {
+        
+        //MARK: - Body & components
+        
         ZStack {
             BackgroundView()
             NavigationBar(navTitle: "Add Task", buttonImageName: "chevron.left") {
                 //
             }
             VStack {
-                EntryFieldView()
+                EntryFieldView(fieldDescription: "Add your task name", fieldContent: vm.newTask)
                 ButtonView(buttonTitle: "Add Task") {
                     //
                 }
@@ -27,6 +34,9 @@ struct AddTaskView: View {
             }
         }
 #Preview {
-    AddTaskView()
+    NavigationView {
+        AddTaskView()
+    }
         .preferredColorScheme(.dark)
+        .environmentObject(ViewModel())
 }

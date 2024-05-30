@@ -10,12 +10,14 @@ import SwiftUI
 struct EntryFieldView: View {
     
     //MARK: - Properties
-    @State var newTask = ""
+    @EnvironmentObject var vm: ViewModel
+    var fieldDescription: String
+    var fieldContent: String
     
     var body: some View {
         
         VStack {
-            TextField("Enter your new task", text: $newTask)
+            TextField(fieldDescription, text: $fieldContent )
                 .font(.headline)
                 .padding()
                 .background(Color.tdPrimary.opacity(0.15))
@@ -25,6 +27,7 @@ struct EntryFieldView: View {
 }
 
 #Preview {
-    EntryFieldView()
+    EntryFieldView(fieldDescription: "Enter your description", fieldContent: "Enter your model content")
+        .environmentObject(ViewModel())
         .preferredColorScheme(.dark)
 }

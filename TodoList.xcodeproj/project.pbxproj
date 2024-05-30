@@ -20,6 +20,7 @@
 		4B7361572C07B22800F40142 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7361562C07B22800F40142 /* ButtonView.swift */; };
 		4B73615A2C07B5CA00F40142 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7361592C07B5CA00F40142 /* AddTaskView.swift */; };
 		4B73615E2C08DA3C00F40142 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73615D2C08DA3C00F40142 /* NavigationBar.swift */; };
+		4B7361632C08E57800F40142 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7361622C08E57800F40142 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		4B7361562C07B22800F40142 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		4B7361592C07B5CA00F40142 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		4B73615D2C08DA3C00F40142 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		4B7361622C08E57800F40142 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +74,13 @@
 				4B5A8B702C07B1B000086B9F /* New Group */,
 				4B5A8B672C06583000086B9F /* Views */,
 				4B5A8B552C0626D200086B9F /* Components */,
-				4B5A8B522C06210600086B9F /* ViewModel */,
 				4B5A8B412C06156800086B9F /* TodoListApp.swift */,
 				4B5A8B432C06156800086B9F /* ContentView.swift */,
 				4B5A8B4F2C061D2200086B9F /* Extensions */,
 				4B5A8B452C06156900086B9F /* Assets.xcassets */,
 				4B5A8B472C06156900086B9F /* Preview Content */,
+				4B5A8B522C06210600086B9F /* ViewModel */,
+				4B73615F2C08E55100F40142 /* Model */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -148,6 +151,14 @@
 				4B7361592C07B5CA00F40142 /* AddTaskView.swift */,
 			);
 			path = AddTask;
+			sourceTree = "<group>";
+		};
+		4B73615F2C08E55100F40142 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B7361622C08E57800F40142 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 				4B5A8B572C06278600086B9F /* BackgroundView.swift in Sources */,
 				4B73615A2C07B5CA00F40142 /* AddTaskView.swift in Sources */,
 				4B5A8B442C06156800086B9F /* ContentView.swift in Sources */,
+				4B7361632C08E57800F40142 /* Model.swift in Sources */,
 				4B5A8B422C06156800086B9F /* TodoListApp.swift in Sources */,
 				4B5A8B6F2C07694C00086B9F /* EntryFieldView.swift in Sources */,
 				4B73615E2C08DA3C00F40142 /* NavigationBar.swift in Sources */,

@@ -15,5 +15,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(ViewModel())
         .preferredColorScheme(.dark)
 }

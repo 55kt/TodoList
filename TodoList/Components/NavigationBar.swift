@@ -31,7 +31,7 @@ struct NavigationBar: View {
                         } label: {
                             Image(systemName: buttonImageName)
                                 .font(.headline)
-                                .foregroundColor(.tdAccent)
+                                .foregroundColor(.tdAccent) //Add your color
                         }
                     }
                 }
@@ -39,6 +39,8 @@ struct NavigationBar: View {
 }
 
 #Preview {
-    NavigationBar(navTitle: "Nav Bar Name", buttonImageName: "chevron.left") {}
+    NavigationView {
+        NavigationBar(navTitle: "Nav Bar Name", buttonImageName: "circle") {}
+    }
         .preferredColorScheme(.dark)
 }

@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct TaskListView: View {
+    
+    //MARK: - Properties
+    @EnvironmentObject var vm: ViewModel
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -21,6 +25,7 @@ struct TaskListView: View {
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink(destination: AddTaskView()) {
                         Image(systemName: "plus")
+                            .font(.headline)
                             .foregroundStyle(Color.tdAccent)
                     }
                 }
@@ -31,5 +36,6 @@ struct TaskListView: View {
 
 #Preview {
     TaskListView()
+        .environmentObject(ViewModel())
         .preferredColorScheme(.dark)
 }
