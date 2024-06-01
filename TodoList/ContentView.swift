@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var vm = ViewModel()
+    
     var body: some View {
         TaskListView()
     }

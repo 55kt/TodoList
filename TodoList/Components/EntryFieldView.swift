@@ -12,7 +12,7 @@ struct EntryFieldView: View {
     //MARK: - Properties
     @EnvironmentObject var vm: ViewModel
     var fieldDescription: String
-    var fieldContent: String
+    @Binding var fieldContent: String
     
     var body: some View {
         
@@ -27,7 +27,10 @@ struct EntryFieldView: View {
 }
 
 #Preview {
-    EntryFieldView(fieldDescription: "Enter your description", fieldContent: "Enter your model content")
+    EntryFieldView(fieldDescription: "Enter your description", fieldContent: .constant("")) //*1
         .environmentObject(ViewModel())
         .preferredColorScheme(.dark)
 }
+
+
+//*1 In field content enter your vm model content

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TaskModel {
+struct TaskModel: Identifiable {
     let id: UUID = UUID()
     var title: String
     var isCompleted: Bool = false

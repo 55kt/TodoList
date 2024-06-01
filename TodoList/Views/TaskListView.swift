@@ -15,10 +15,10 @@ struct TaskListView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                
                 //MARK: - Components
+                
                 BackgroundView()
-                    
+                ListView()
             }
             .navigationTitle("To Do List")
             .toolbar {
