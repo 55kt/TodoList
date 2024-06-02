@@ -17,6 +17,7 @@ struct ButtonView: View {
     var body: some View {
         VStack {
             Button {
+                action()
                 dismiss()
             } label: {
                 Text(buttonTitle)

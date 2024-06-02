@@ -17,6 +17,5 @@ class ViewModel: ObservableObject {
     func addTask(task: String) {
         let newTask = TaskModel(title: task)
         tasks.append(newTask)
-        print("Task Added: \(task)")
     }
 }

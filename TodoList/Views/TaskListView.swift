@@ -16,7 +16,6 @@ struct TaskListView: View {
         NavigationStack {
             ZStack {
                 //MARK: - Components
-                
                 BackgroundView()
                 ListView()
             }
