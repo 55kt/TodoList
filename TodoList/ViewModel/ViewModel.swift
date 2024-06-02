@@ -18,4 +18,10 @@ class ViewModel: ObservableObject {
         let newTask = TaskModel(title: task)
         tasks.append(newTask)
     }
+    
+    func isCompletedTask(task: TaskModel) {
+        if let index = tasks.firstIndex(where: {$0.id == task.id}) {
+            tasks[index].isCompleted.toggle()
+        }
+    }
 }

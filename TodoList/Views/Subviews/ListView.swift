@@ -10,13 +10,22 @@ import SwiftUI
 struct ListView: View {
     
     @EnvironmentObject var vm: ViewModel
+    @State private var isEditViewPresented = false
     
     var body: some View {
         VStack {
             List {
                 ForEach(vm.tasks) {
-                    task in Text(task.title)
+                    task in TaskRow(model: task) {
+                        vm.isCompletedTask(task: task)
+                    }
+                    .onTapGesture {
+                        isEditViewPresented = true
+                    }
                 }
+                .sheet(isPresented: $isEditViewPresented, content: {
+                    EmptyView()
+                })
             }
             .listStyle(.plain)
         }
