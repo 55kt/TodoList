@@ -12,13 +12,11 @@ struct NavigationBar: View {
     //MARK: - Properties
     @Environment (\.dismiss) private var dismiss //Snaps of state
     let navTitle: String
-    let buttonImageName: String
-    let action: () -> ()
+    let buttonImageName: String?
+    let buttonText: String?
     
     var body: some View {
-        ZStack {
-            BackgroundView()
-        }
+        BackgroundView()
         .navigationTitle(navTitle)
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarBackButtonHidden(true)
@@ -29,9 +27,15 @@ struct NavigationBar: View {
                         Button {
                             dismiss()
                         } label: {
-                            Image(systemName: buttonImageName)
-                                .font(.headline)
-                                .foregroundColor(.tdAccent) //Add your color
+                            if let buttonText = buttonText {
+                                Text(buttonText)
+                                    .font(.headline)
+                                    .foregroundStyle(Color.tdAccent)
+                            } else if let buttonImageName = buttonImageName, !buttonImageName.isEmpty {
+                                Image(systemName: buttonImageName)
+                                    .font(.headline)
+                                    .foregroundStyle(Color.tdAccent)
+                            }
                         }
                     }
                 }
@@ -40,7 +44,7 @@ struct NavigationBar: View {
 
 #Preview {
     NavigationView {
-        NavigationBar(navTitle: "Nav Bar Name", buttonImageName: "circle") {}
+        NavigationBar(navTitle: "Nav Bar Name", buttonImageName: nil, buttonText: "TEXT")
     }
         .preferredColorScheme(.dark)
 }

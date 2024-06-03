@@ -20,9 +20,8 @@ struct AddTaskView: View {
             
             BackgroundView()
             
-            NavigationBar(navTitle: "Add Task", buttonImageName: "chevron.left") {
-                //
-            }
+            NavigationBar(navTitle: "Add Task", buttonImageName: "chevron.left", buttonText: nil)
+            
             VStack {
                 
                 EntryFieldView(fieldDescription: "Add your task name", fieldContent: $vm.newTask)
@@ -35,9 +34,11 @@ struct AddTaskView: View {
             }
             .padding(10)
         }
-        
-            }
+        .onAppear{
+            vm.newTask = ""  //Make entryfield empty whan you go back
         }
+    }
+}
 #Preview {
     NavigationView {
         AddTaskView()

@@ -34,7 +34,9 @@ struct TaskListView: View {
 }
 
 #Preview {
-    TaskListView()
+    NavigationView{
+        TaskListView()
+    }
         .environmentObject(ViewModel())
         .preferredColorScheme(.dark)
 }

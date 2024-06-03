@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B3734002C0C2E9200C7CFB4 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3733FF2C0C2E9200C7CFB4 /* TaskRow.swift */; };
+		4B3734032C0DF78C00C7CFB4 /* EditTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3734022C0DF78C00C7CFB4 /* EditTaskView.swift */; };
 		4B5A8B422C06156800086B9F /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A8B412C06156800086B9F /* TodoListApp.swift */; };
 		4B5A8B442C06156800086B9F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A8B432C06156800086B9F /* ContentView.swift */; };
 		4B5A8B462C06156900086B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5A8B452C06156900086B9F /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		4B3733FF2C0C2E9200C7CFB4 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		4B3734022C0DF78C00C7CFB4 /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
 		4B5A8B3E2C06156800086B9F /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5A8B412C06156800086B9F /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
 		4B5A8B432C06156800086B9F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B3734012C0DF76F00C7CFB4 /* EditTask */ = {
+			isa = PBXGroup;
+			children = (
+				4B3734022C0DF78C00C7CFB4 /* EditTaskView.swift */,
+			);
+			path = EditTask;
+			sourceTree = "<group>";
+		};
 		4B5A8B352C06156800086B9F = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +137,7 @@
 				4B9852512C0C2BE6000DAF1F /* TaskList */,
 				4B7361582C07B5BC00F40142 /* AddTask */,
 				4B5A8B6A2C06603000086B9F /* Subviews */,
+				4B3734012C0DF76F00C7CFB4 /* EditTask */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +248,7 @@
 				4B5A8B572C06278600086B9F /* BackgroundView.swift in Sources */,
 				4B73615A2C07B5CA00F40142 /* AddTaskView.swift in Sources */,
 				4B5A8B442C06156800086B9F /* ContentView.swift in Sources */,
+				4B3734032C0DF78C00C7CFB4 /* EditTaskView.swift in Sources */,
 				4B7361632C08E57800F40142 /* Model.swift in Sources */,
 				4B5A8B422C06156800086B9F /* TodoListApp.swift in Sources */,
 				4B3734002C0C2E9200C7CFB4 /* TaskRow.swift in Sources */,

@@ -23,8 +23,9 @@ struct ListView: View {
                         isEditViewPresented = true
                     }
                 }
+                .onDelete(perform: vm.deleteTask)
                 .sheet(isPresented: $isEditViewPresented, content: {
-                    EmptyView()
+                    EditTaskView()
                 })
             }
             .listStyle(.plain)
