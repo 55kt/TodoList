@@ -23,6 +23,7 @@
 		4B73615A2C07B5CA00F40142 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7361592C07B5CA00F40142 /* AddTaskView.swift */; };
 		4B73615E2C08DA3C00F40142 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73615D2C08DA3C00F40142 /* NavigationBar.swift */; };
 		4B7361632C08E57800F40142 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7361622C08E57800F40142 /* Model.swift */; };
+		4B8759282C0F8A5300E2A28D /* NoTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8759272C0F8A5300E2A28D /* NoTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		4B7361592C07B5CA00F40142 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		4B73615D2C08DA3C00F40142 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		4B7361622C08E57800F40142 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4B8759272C0F8A5300E2A28D /* NoTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				4B5A8B6B2C06608700086B9F /* ListView.swift */,
 				4B3733FF2C0C2E9200C7CFB4 /* TaskRow.swift */,
+				4B8759272C0F8A5300E2A28D /* NoTaskView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				4B5A8B442C06156800086B9F /* ContentView.swift in Sources */,
 				4B3734032C0DF78C00C7CFB4 /* EditTaskView.swift in Sources */,
 				4B7361632C08E57800F40142 /* Model.swift in Sources */,
+				4B8759282C0F8A5300E2A28D /* NoTaskView.swift in Sources */,
 				4B5A8B422C06156800086B9F /* TodoListApp.swift in Sources */,
 				4B3734002C0C2E9200C7CFB4 /* TaskRow.swift in Sources */,
 				4B5A8B6F2C07694C00086B9F /* EntryFieldView.swift in Sources */,

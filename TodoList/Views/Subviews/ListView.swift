@@ -31,11 +31,24 @@ struct ListView: View {
             })
         }
         .listStyle(.plain)
+        
+        .navigationTitle("To Do List")
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                NavigationLink(destination: AddTaskView()) {
+                    Image(systemName: "plus")
+                        .font(.headline)
+                        .foregroundStyle(Color.tdAccent)
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    ListView()
-        .environmentObject(ViewModel())
+    NavigationView {
+        ListView()
+            .environmentObject(ViewModel())
         .preferredColorScheme(.dark)
+    }
 }
