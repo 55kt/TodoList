@@ -18,8 +18,6 @@ struct AddTaskView: View {
         
         ZStack {
             
-            BackgroundView()
-            
             NavigationBar(navTitle: "Add Task", buttonImageName: "chevron.left", buttonText: nil)
             
             VStack {

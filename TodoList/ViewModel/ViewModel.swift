@@ -12,6 +12,7 @@ class ViewModel: ObservableObject {
     //MARK: - Properties
     @Published var tasks: [TaskModel] = []
     @Published var newTask: String = ""
+    @Published var selectedTask: TaskModel?
     
     //MARK: - Methods
     func addTask(task: String) {
@@ -27,5 +28,11 @@ class ViewModel: ObservableObject {
     
     func deleteTask(task: IndexSet) {
         tasks.remove(atOffsets: task)
+    }
+    
+    func updateTask(id: UUID, title: String) {
+        if let index = tasks.firstIndex(where: { $0.id == id }){
+            tasks[index].title = title
+        }
     }
 }

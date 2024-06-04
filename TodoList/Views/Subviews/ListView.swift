@@ -13,23 +13,24 @@ struct ListView: View {
     @State private var isEditViewPresented = false
     
     var body: some View {
-        VStack {
-            List {
-                ForEach(vm.tasks) {
-                    task in TaskRow(model: task) {
-                        vm.isCompletedTask(task: task)
-                    }
-                    .onTapGesture {
-                        isEditViewPresented = true
-                    }
+        List {
+            ForEach(vm.tasks) {
+                task in TaskRow(model: task) {
+                    vm.isCompletedTask(task: task)
                 }
-                .onDelete(perform: vm.deleteTask)
-                .sheet(isPresented: $isEditViewPresented, content: {
-                    EditTaskView()
-                })
+                .onTapGesture {
+                    vm.selectedTask = task
+                    isEditViewPresented = true
+                }
             }
-            .listStyle(.plain)
+            .onDelete(perform: vm.deleteTask)
+            .sheet(isPresented: $isEditViewPresented, content: {
+                if let taskToEdit = vm.selectedTask {
+                    EditTaskView(task: taskToEdit)
+                }
+            })
         }
+        .listStyle(.plain)
     }
 }
 

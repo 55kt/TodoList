@@ -44,7 +44,7 @@ struct NavigationBar: View {
 
 #Preview {
     NavigationView {
-        NavigationBar(navTitle: "Nav Bar Name", buttonImageName: nil, buttonText: "TEXT")
+        NavigationBar(navTitle: "Nav Bar Name", buttonImageName: nil, buttonText: "button")
     }
         .preferredColorScheme(.dark)
 }
