@@ -25,6 +25,7 @@
 		4B7361632C08E57800F40142 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7361622C08E57800F40142 /* Model.swift */; };
 		4B8759282C0F8A5300E2A28D /* NoTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8759272C0F8A5300E2A28D /* NoTaskView.swift */; };
 		4BBC4CB12C10CDD9005EA097 /* ProgressLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBC4CB02C10CDD9005EA097 /* ProgressLineView.swift */; };
+		4BBC4CB42C10E8ED005EA097 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBC4CB32C10E8ED005EA097 /* LaunchScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		4B7361622C08E57800F40142 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4B8759272C0F8A5300E2A28D /* NoTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTaskView.swift; sourceTree = "<group>"; };
 		4BBC4CB02C10CDD9005EA097 /* ProgressLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLineView.swift; sourceTree = "<group>"; };
+		4BBC4CB32C10E8ED005EA097 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		4B5A8B672C06583000086B9F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4BBC4CB22C10E8CA005EA097 /* LaunchScreen */,
 				4B9852512C0C2BE6000DAF1F /* TaskList */,
 				4B7361582C07B5BC00F40142 /* AddTask */,
 				4B5A8B6A2C06603000086B9F /* Subviews */,
@@ -179,6 +182,14 @@
 				4B5A8B682C06584300086B9F /* TaskListView.swift */,
 			);
 			path = TaskList;
+			sourceTree = "<group>";
+		};
+		4BBC4CB22C10E8CA005EA097 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4BBC4CB32C10E8ED005EA097 /* LaunchScreenView.swift */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 				4B73615A2C07B5CA00F40142 /* AddTaskView.swift in Sources */,
 				4B5A8B442C06156800086B9F /* ContentView.swift in Sources */,
 				4B3734032C0DF78C00C7CFB4 /* EditTaskView.swift in Sources */,
+				4BBC4CB42C10E8ED005EA097 /* LaunchScreenView.swift in Sources */,
 				4B7361632C08E57800F40142 /* Model.swift in Sources */,
 				4B8759282C0F8A5300E2A28D /* NoTaskView.swift in Sources */,
 				4B5A8B422C06156800086B9F /* TodoListApp.swift in Sources */,
