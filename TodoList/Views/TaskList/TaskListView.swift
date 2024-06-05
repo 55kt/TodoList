@@ -23,7 +23,6 @@ struct TaskListView: View {
                 } else {
                     ListView()
                 }
-                
             }
         }
     }

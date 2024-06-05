@@ -32,6 +32,8 @@ struct ListView: View {
         }
         .listStyle(.plain)
         
+        ProgressLineView()
+        
         .navigationTitle("To Do List")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -46,9 +48,7 @@ struct ListView: View {
 }
 
 #Preview {
-    NavigationView {
-        ListView()
-            .environmentObject(ViewModel())
+    ListView()
+        .environmentObject(ViewModel())
         .preferredColorScheme(.dark)
-    }
 }

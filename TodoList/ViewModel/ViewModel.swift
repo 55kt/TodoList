@@ -14,6 +14,13 @@ class ViewModel: ObservableObject {
     @Published var newTask: String = ""
     @Published var selectedTask: TaskModel?
     
+    //MARK: - Progress View Properties
+    var completionRate: Double {
+        let totalTasks = tasks.count
+        let completionTasks = tasks.filter {$0.isCompleted}.count
+        return totalTasks > 0 ? Double(completionTasks) / Double(totalTasks): 0
+    }
+    
     //MARK: - Methods
     func addTask(task: String) {
         let newTask = TaskModel(title: task)

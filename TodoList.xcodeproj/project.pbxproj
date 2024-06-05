@@ -24,6 +24,7 @@
 		4B73615E2C08DA3C00F40142 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73615D2C08DA3C00F40142 /* NavigationBar.swift */; };
 		4B7361632C08E57800F40142 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7361622C08E57800F40142 /* Model.swift */; };
 		4B8759282C0F8A5300E2A28D /* NoTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8759272C0F8A5300E2A28D /* NoTaskView.swift */; };
+		4BBC4CB12C10CDD9005EA097 /* ProgressLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBC4CB02C10CDD9005EA097 /* ProgressLineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		4B73615D2C08DA3C00F40142 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		4B7361622C08E57800F40142 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4B8759272C0F8A5300E2A28D /* NoTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTaskView.swift; sourceTree = "<group>"; };
+		4BBC4CB02C10CDD9005EA097 /* ProgressLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				4B5A8B6B2C06608700086B9F /* ListView.swift */,
 				4B3733FF2C0C2E9200C7CFB4 /* TaskRow.swift */,
 				4B8759272C0F8A5300E2A28D /* NoTaskView.swift */,
+				4BBC4CB02C10CDD9005EA097 /* ProgressLineView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				4B5A8B422C06156800086B9F /* TodoListApp.swift in Sources */,
 				4B3734002C0C2E9200C7CFB4 /* TaskRow.swift in Sources */,
 				4B5A8B6F2C07694C00086B9F /* EntryFieldView.swift in Sources */,
+				4BBC4CB12C10CDD9005EA097 /* ProgressLineView.swift in Sources */,
 				4B73615E2C08DA3C00F40142 /* NavigationBar.swift in Sources */,
 				4B5A8B6C2C06608700086B9F /* ListView.swift in Sources */,
 				4B5A8B542C06211900086B9F /* ViewModel.swift in Sources */,
