@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ListView: View {
     
+    //MARK: - Properties
     @EnvironmentObject var vm: ViewModel
     @State private var isEditViewPresented = false
     
+    //MARK: - Body
     var body: some View {
         List {
             ForEach(vm.tasks) {
@@ -34,6 +36,7 @@ struct ListView: View {
         
         ProgressLineView()
         
+        //General NavBar
         .navigationTitle("To Do List")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -47,6 +50,7 @@ struct ListView: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     ListView()
         .environmentObject(ViewModel())

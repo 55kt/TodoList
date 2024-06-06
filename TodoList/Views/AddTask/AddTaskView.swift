@@ -37,9 +37,10 @@ struct AddTaskView: View {
         }
     }
 }
+//MARK: - Preview
 #Preview {
     NavigationView {
-        AddTaskView()
+        AddTaskView()  //Embet in NavigationView for a present NavBar
     }
         .preferredColorScheme(.dark)
         .environmentObject(ViewModel())

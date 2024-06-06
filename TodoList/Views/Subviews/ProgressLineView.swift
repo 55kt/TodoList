@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ProgressLineView: View {
     
+    //MARK: - Properties
     @EnvironmentObject var vm: ViewModel
     
+    //MARK: - Body
     var body: some View {
         VStack {
             Spacer()
@@ -25,6 +27,7 @@ struct ProgressLineView: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     NavigationStack {
         ProgressLineView()

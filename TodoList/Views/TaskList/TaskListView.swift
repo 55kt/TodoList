@@ -12,6 +12,7 @@ struct TaskListView: View {
     //MARK: - Properties
     @EnvironmentObject var vm: ViewModel
     
+    //MARK: - Body
     var body: some View {
         NavigationStack {
             ZStack {
@@ -28,6 +29,7 @@ struct TaskListView: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     TaskListView()
         .environmentObject(ViewModel())

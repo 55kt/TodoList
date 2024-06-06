@@ -9,9 +9,11 @@ import SwiftUI
 
 struct EditTaskView: View {
     
+    //MARK: - Properties
     @EnvironmentObject var vm: ViewModel
     var task: TaskModel
     
+    //MARK: - Body
     var body: some View {
         
         NavigationStack {
@@ -37,6 +39,7 @@ struct EditTaskView: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     NavigationView {
         EditTaskView(task: TaskModel(title: "Task"))

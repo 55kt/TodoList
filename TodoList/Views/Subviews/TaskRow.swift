@@ -13,6 +13,7 @@ struct TaskRow: View {
     var model: TaskModel
     let action: () -> ()
     
+    //MARK: - Body
     var body: some View {
         HStack {
             model.isCompleted ? Text(model.title).strikethrough().foregroundStyle(Color.tdPrimary.opacity(0.5)) : Text(model.title)
@@ -38,6 +39,7 @@ struct TaskRow: View {
     }
 }
 
+    //MARK: - Preview
 #Preview {
     List {
         TaskRow(model: TaskModel(title: "Task 1", isCompleted: true)) {}

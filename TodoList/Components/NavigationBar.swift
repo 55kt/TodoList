@@ -15,8 +15,11 @@ struct NavigationBar: View {
     let buttonImageName: String?
     let buttonText: String?
     
+    //MARK: - Body
     var body: some View {
         BackgroundView()
+        
+        //MARK: - Nav Bar
         .navigationTitle(navTitle)
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarBackButtonHidden(true)
@@ -42,6 +45,7 @@ struct NavigationBar: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     NavigationView {
         NavigationBar(navTitle: "Nav Bar Name", buttonImageName: nil, buttonText: "button")

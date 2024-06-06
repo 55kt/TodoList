@@ -14,6 +14,7 @@ struct EntryFieldView: View {
     var fieldDescription: String
     @Binding var fieldContent: String
     
+    //MARK: - Body
     var body: some View {
         
         VStack {
@@ -26,6 +27,7 @@ struct EntryFieldView: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     EntryFieldView(fieldDescription: "Enter your description", fieldContent: .constant("")) //*1
         .environmentObject(ViewModel())

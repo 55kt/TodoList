@@ -14,6 +14,7 @@ struct ButtonView: View {
     let buttonTitle: String
     let action: () -> ()
     
+    //MARK: - Body
     var body: some View {
         VStack {
             Button {
@@ -32,6 +33,7 @@ struct ButtonView: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     ButtonView(buttonTitle: "Button") {}
         .preferredColorScheme(.dark)

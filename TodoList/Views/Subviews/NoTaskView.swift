@@ -9,8 +9,10 @@ import SwiftUI
 
 struct NoTaskView: View {
     
+    //MARK: - Properties
     @EnvironmentObject var vm: ViewModel
     
+    //MARK: - Body
     var body: some View {
         VStack {
             Spacer()
@@ -23,6 +25,7 @@ struct NoTaskView: View {
             
             Spacer()
             
+            //Navigation Button
             NavigationLink(destination: AddTaskView()) {
                 ZStack {
                     
@@ -40,6 +43,7 @@ struct NoTaskView: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     NoTaskView()
         .environmentObject(ViewModel())

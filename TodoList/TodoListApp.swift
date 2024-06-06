@@ -14,9 +14,10 @@ struct TodoListApp: App {
     @AppStorage("isDarkMode") private var isDarkMode: Bool = true //Dark theme condition
     @StateObject var vm = ViewModel() //Gives access to the viewModel to the entire app
     
+    //MARK: - Body
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContainerView()
                 .environmentObject(vm) //For the correct preview in app
                 .preferredColorScheme(isDarkMode ? .dark : .light) //Dark theme condition
         }

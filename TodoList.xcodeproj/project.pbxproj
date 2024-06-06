@@ -26,6 +26,8 @@
 		4B8759282C0F8A5300E2A28D /* NoTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8759272C0F8A5300E2A28D /* NoTaskView.swift */; };
 		4BBC4CB12C10CDD9005EA097 /* ProgressLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBC4CB02C10CDD9005EA097 /* ProgressLineView.swift */; };
 		4BBC4CB42C10E8ED005EA097 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBC4CB32C10E8ED005EA097 /* LaunchScreenView.swift */; };
+		4BD8923C2C11F78100B66966 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD8923B2C11F78100B66966 /* CustomProgressView.swift */; };
+		4BD8923E2C11FD8A00B66966 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD8923D2C11FD8A00B66966 /* ContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		4B8759272C0F8A5300E2A28D /* NoTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTaskView.swift; sourceTree = "<group>"; };
 		4BBC4CB02C10CDD9005EA097 /* ProgressLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLineView.swift; sourceTree = "<group>"; };
 		4BBC4CB32C10E8ED005EA097 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		4BD8923B2C11F78100B66966 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		4BD8923D2C11FD8A00B66966 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				4B5A8B412C06156800086B9F /* TodoListApp.swift */,
-				4B5A8B432C06156800086B9F /* ContentView.swift */,
 				4B5A8B672C06583000086B9F /* Views */,
 				4B5A8B522C06210600086B9F /* ViewModel */,
 				4B73615F2C08E55100F40142 /* Model */,
@@ -188,6 +191,9 @@
 			isa = PBXGroup;
 			children = (
 				4BBC4CB32C10E8ED005EA097 /* LaunchScreenView.swift */,
+				4BD8923B2C11F78100B66966 /* CustomProgressView.swift */,
+				4BD8923D2C11FD8A00B66966 /* ContainerView.swift */,
+				4B5A8B432C06156800086B9F /* ContentView.swift */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 			files = (
 				4B5A8B572C06278600086B9F /* BackgroundView.swift in Sources */,
 				4B73615A2C07B5CA00F40142 /* AddTaskView.swift in Sources */,
+				4BD8923C2C11F78100B66966 /* CustomProgressView.swift in Sources */,
 				4B5A8B442C06156800086B9F /* ContentView.swift in Sources */,
 				4B3734032C0DF78C00C7CFB4 /* EditTaskView.swift in Sources */,
 				4BBC4CB42C10E8ED005EA097 /* LaunchScreenView.swift in Sources */,
@@ -274,6 +281,7 @@
 				4B5A8B6F2C07694C00086B9F /* EntryFieldView.swift in Sources */,
 				4BBC4CB12C10CDD9005EA097 /* ProgressLineView.swift in Sources */,
 				4B73615E2C08DA3C00F40142 /* NavigationBar.swift in Sources */,
+				4BD8923E2C11FD8A00B66966 /* ContainerView.swift in Sources */,
 				4B5A8B6C2C06608700086B9F /* ListView.swift in Sources */,
 				4B5A8B542C06211900086B9F /* ViewModel.swift in Sources */,
 				4B5A8B512C061D9100086B9F /* ColorExtensions.swift in Sources */,

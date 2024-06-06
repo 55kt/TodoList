@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
+    //MARK: - Properties
     @StateObject private var vm = ViewModel()
     
+    //MARK: - Body
     var body: some View {
         TaskListView()
     }
 }
 
+//MARK: - Preview
 #Preview {
     ContentView()
         .environmentObject(ViewModel())
